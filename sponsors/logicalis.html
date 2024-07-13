@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company 1 - GradGirls Career & Networking Event 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >GradGirls Career Event 2024</a
+        >
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="../index.html#home">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#map">
+          <a href="../index.html">Map</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#register">
+          Register
+        </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">Carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-nvestors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-roup.html">REA Group</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">Logicalis</h1>
+        <img src="logicalis.jpg" alt="Company 1 Logo" class="company__logo" />
+        <p class="company__description">
+          Logicalis helps organisations achieve their digital dreams. They allow
+          our clients like hospitals, universities, car manufacturers among many
+          others know that we understand their pain points and have their
+          technology needs in mind. Then we work with our incredible partners
+          like Microsoft, CISCO, DELL, RedHat, Fortinet among many other
+          technology players in the field - both established and emerging down
+          to brand new founders to achieve these digital transformation for our
+          customers. We help our customers with cloud and connectivity,
+          cybersecurity, networking, modern workspace, employee experience and a
+          myriad of other digital needs. Our vision is We are the partner of
+          choice for customers, people, and the planet.<br /><br />
+          Today we are hosting some incredible team members from across
+          Logicalis Australia who are here to answer your career questions. You
+          will be meeting Cloud Consultants, Technology Managers, Business
+          Analysts and Senior Engineers along with your questions about our
+          sector and your CV.
+        </p>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-header">CV Reviews</div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Interview Practice 1
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Interview structure and questions
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask me Anything with our Technology Experts
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Technology Manager – Endpoint Technology<br />
+              Senior Cloud Consultant – Cloud and Infrastructure<br />
+              Senior Business Analyst (Power BI) <br />
+              Senior System Engineer – Linux<br /><br />
+              Questions can be along
+              <ul>
+                <li>- What opportunities led you to your role?</li>
+                <li>- How can I be you – or get to your role?</li>
+                <li>
+                  - What should I do to prepare myself for a role like this?
+                </li>
+                <li>- What are some good and bad things about your role?</li>
+                <li>
+                  - If you were hiring in your team what are the attributes you
+                  would look for
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <a href="mailto: sophiesbson@gmail.com">
+          <h2 class="contact__email">sophiesbson@gmail.com</h2>
+        </a>
+        <div class="contact__links">
+          <a href="https://github.com/sson22" target="_blank">
+            <i class="fa-brands fa-github contact__icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sophie-son/" target="_blank">
+            <i class="fa-brands fa-linkedin contact__icon"></i>
+          </a>
+          <p class="contact__copyrights">
+            2024 Sophie Son Portfolio- All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

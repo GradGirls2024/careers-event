@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company 1 - GradGirls Career & Networking Event 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >GradGirls Career Event 2024</a
+        >
+      </div>
+      <u<li class="navbar__menu__item" data-link="../index.html#home">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="navbar__menu__item" data-link="../index.html#map">
+        <a href="../index.html">Map</a>
+      </li>
+      <li class="navbar__menu__item" data-link="../index.html#register">
+        Register
+      </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">Carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-nvestors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-roup.html">REA Group</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">IFM Investors</h1>
+        <img src="ifm.png" alt="Company 1 Logo" class="company__logo" />
+        <p class="company__description">
+          IFM Investors was established more than 25 years ago with the aim to
+          invest, protect and grow the long-term retirement savings of working
+          people. Owned by a group of Australian industry super funds, IFM
+          Investors has approximately A$222.4 billion under management as at 31
+          March 2024. Operating from 13 offices globally – Melbourne, Sydney,
+          London, Berlin, Zurich, Amsterdam, Milan, Warsaw, New York, Houston,
+          Hong Kong, Seoul and Tokyo – IFM manages investments across
+          infrastructure, debt, listed equities and private equity assets. For
+          more information, visit www.ifminvestors.com.
+        </p>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-header">CV Reviews</div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with an Business Analyst 1
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Ask me anything, I am a Business Analyst and I collaborate closely
+              with our investment and operational teams to build and develop
+              applications that manages investments worth billions of dollars,
+              It's a thrilling experience!
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with an Business Analyst 2
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Ask me anything, I’m a Business Analyst specialising in Enterprise
+              Solutions and Regulatory Changes, I collaborate with
+              cross-functional teams to assess compliance requirements, analyse
+              business processes, and translate them into actionable solutions.
+              It’s an exhilarating journey!
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with an IT infrastructure Project Manager
+
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Ask me anything, I’m an IT Infrastructure Project Manager bringing
+              colleagues together to lead and shape projects from concept to
+              reality. It is so much fun!
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with a Developer
+
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Ask me anything, I’m a Developer and I develop software that
+              processes investments worth billions of dollars
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <a href="mailto: sophiesbson@gmail.com">
+          <h2 class="contact__email">sophiesbson@gmail.com</h2>
+        </a>
+        <div class="contact__links">
+          <a href="https://github.com/sson22" target="_blank">
+            <i class="fa-brands fa-github contact__icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sophie-son/" target="_blank">
+            <i class="fa-brands fa-linkedin contact__icon"></i>
+          </a>
+          <p class="contact__copyrights">
+            2024 Sophie Son Portfolio- All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

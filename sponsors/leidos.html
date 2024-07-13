@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company 1 - GradGirls Career & Networking Event 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >GradGirls Career Event 2024</a
+        >
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="../index.html#home">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#map">
+          <a href="../index.html">Map</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#register">
+          Register
+        </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">Carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-nvestors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-roup.html">REA Group</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">Leidos</h1>
+        <img src="leidos.png" alt="Company 1 Logo" class="company__logo" />
+        <p class="company__description">
+          Leidos is a Fortune 500® technology, engineering, and science
+          solutions and services leader working to solve the world's toughest
+          challenges in the defence, intelligence, civil and health markets.
+          Leidos' 46,000 employees support vital missions for government and
+          commercial customers. Leidos Australia has been a trusted partner to
+          the Australian Government for over 25 years, having delivered some of
+          the most complex software and systems integration projects in
+          Australia. Led by a local leadership team, we deliver projects and
+          services through five lines of business – Airborne Solutions, Civil
+          Services & Projects, Defence Digital Solutions & Support, Defence
+          Mission Systems and Intelligence (C4ISR) – supported by local
+          corporate functions.<br /><br />
+          Leidos Australia’s government and defence customers enjoy the
+          advantage of a 2000+ person local business, backed by Leidos’ global
+          expertise, experience and capabilities. With a focus on sovereign
+          development and support, the company invests locally in R&D both
+          directly and in combination with local Small and Medium Enterprises
+          (SME).
+        </p>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-header">
+              CV Reviews
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Have you CV reviewed by a professional Talent Acquisition Advisor
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Interview Practice
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Participant in interview practice with a professional Talent
+              Acquisition Advisor
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Interview Practice 2
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">Behavioural interview questions</div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with a Systems Engineer
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <a href="mailto: sophiesbson@gmail.com">
+          <h2 class="contact__email">sophiesbson@gmail.com</h2>
+        </a>
+        <div class="contact__links">
+          <a href="https://github.com/sson22" target="_blank">
+            <i class="fa-brands fa-github contact__icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sophie-son/" target="_blank">
+            <i class="fa-brands fa-linkedin contact__icon"></i>
+          </a>
+          <p class="contact__copyrights">
+            2024 Sophie Son Portfolio- All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

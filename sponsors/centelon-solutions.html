@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company 1 - GradGirls Career & Networking Event 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >GradGirls Career Event 2024</a
+        >
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="../index.html#home">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#map">
+          <a href="../index.html">Map</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#register">
+          Register
+        </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">Carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-nvestors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-roup.html">REA Group</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">Centelon Solutions</h1>
+        <img
+          src="centelon-solutions.png"
+          alt="Company 1 Logo"
+          class="company__logo"
+        />
+        <p class="company__description">
+          Centelon Solutions is a trusted business-technology solutions partner,
+          helping organisations across various industry sectors in their digital
+          transformation journey. Our core strength lies in aligning technology
+          with investment goals and defining a strategic roadmap to continuous
+          transformation. We aim to integrate digital technology built on a
+          foundation of our own platforms and IP, combined with best-of-breed
+          COTS solutions, into all areas of businesses to deliver better
+          customer value. <br /><br />
+
+          We work with customers to keep pace with new trends and achieve
+          dynamic objectives such as: higher and faster value with
+          business-driven technology implementation using agile methodology and
+          DevOps; technology excellence through automation, continuous delivery,
+          application modernisation, and leveraging next- generation
+          technologies; as well as enhanced cost optimisation through reduced
+          cost and improved quality with cutting-edge proprietary accelerators
+          and platforms.
+        </p>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-header">CV Reviews</div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Interview Practice 1
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Technical Interview practice for Software Engineers
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Interview Practice 2
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">Behavioural interview questions</div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-header">
+              Ask Me Anything with a Business Analyst.
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              Jen Jenkins is a Business Analyst with Company-A and they handle
+              the requirements for a government project to build a spaceship
+              control app.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <a href="mailto: sophiesbson@gmail.com">
+          <h2 class="contact__email">sophiesbson@gmail.com</h2>
+        </a>
+        <div class="contact__links">
+          <a href="https://github.com/sson22" target="_blank">
+            <i class="fa-brands fa-github contact__icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sophie-son/" target="_blank">
+            <i class="fa-brands fa-linkedin contact__icon"></i>
+          </a>
+          <p class="contact__copyrights">
+            2024 Sophie Son Portfolio- All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

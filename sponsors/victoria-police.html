@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company 1 - GradGirls Career & Networking Event 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >GradGirls Career Event 2024</a
+        >
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="../index.html#home">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#map">
+          <a href="../index.html">Map</a>
+        </li>
+        <li class="navbar__menu__item" data-link="../index.html#register">
+          Register
+        </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">Carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-nvestors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-roup.html">REA Group</a></li>
+            <li><a href="toyota.html">Toyota</a></li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">Victoria Police</h1>
+        <img src="vicpol.png" alt="Company 1 Logo" class="company__logo" />
+        <p class="company__description">
+          Victoria Police is dedicated to ensuring the safety and well-being of
+          the community we serve. We believe in fostering positive relationships
+          with the diverse communities we serve, promoting inclusivity and
+          understanding.<br /><br />
+          Our contributions to the community go beyond traditional policing. We
+          strive to be proactive in preventing crime through education,
+          awareness campaigns, and partnerships with community organisations.
+          Victoria Police remains at the forefront of innovation in law
+          enforcement and digital technology. We embrace technology and modern
+          policing strategies to effectively respond to emerging challenges and
+          changing community needs. If you observe our officers, they are decked
+          out with Tech gear and we need ESTEAM students like you to design,
+          develop, implement, report and support the tech used by our officers
+          in order to keep them safe while they are on duty, so that they can
+          serve our community and create a safer and stronger Victoria for all.
+        </p>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-header">
+              AMA - Government Recruitment Process and Technology in Victoria
+              Police
+              <span class="material-symbols-outlined icon">expand_more</span>
+            </div>
+            <div class="activity-content">
+              The job application process to work in government is quite
+              different to how the corporate world recruits. VPS is the process
+              used to hire resources for all government agencies in Victoria.
+              Come have a chat with us to find out the differences in government
+              recruitment process and improve your chances of getting your
+              application shortlisted. We are also discussing Technology in
+              Policing today. Victoria Police uses technology in almost every
+              aspect of policing. From intelligence gathering, to cyber
+              security, to forensics science, we do it all! Come have a chat to
+              find out how you can be involved in innovating new technology to
+              further enhance and protect the lives of our community and
+              front-line emergency services.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <a href="mailto: sophiesbson@gmail.com">
+          <h2 class="contact__email">sophiesbson@gmail.com</h2>
+        </a>
+        <div class="contact__links">
+          <a href="https://github.com/sson22" target="_blank">
+            <i class="fa-brands fa-github contact__icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sophie-son/" target="_blank">
+            <i class="fa-brands fa-linkedin contact__icon"></i>
+          </a>
+          <p class="contact__copyrights">
+            2024 Sophie Son Portfolio- All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

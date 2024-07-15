@@ -303,7 +303,7 @@ button {
 }
 
 .icon {
-  color: #bbbbbb;
+  color: var(--color-dark-blue);
 }
 
 /* Footer */
@@ -404,6 +404,9 @@ footer {
   font-size: var(--font-small);
   color: var(--color-black);
   background-color: #f287b7;
+  .join {
+    text-decoration: underline;
+  }
 }
 
 .activity-item.open .activity-content {

@@ -370,7 +370,11 @@ footer {
   border-radius: 15px;
   text-align: left;
 }
-
+/* Styling specifically for the ordered list within the company description */
+.company__description ol {
+  padding-left: 20px; /* Adds padding to the left of the list */
+  margin: 0; /* Reset margin */
+}
 .activity-list {
   display: flex;
   flex-direction: column;
@@ -462,7 +466,6 @@ footer {
     display: flex;
     align-items: center;
     color: white;
-    
   }
   .lo-3 > div,
   .lo-3 a {

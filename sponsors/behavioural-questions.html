@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career & Networking Practice 2024</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav id="navbar">
+      <div class="navbar__logo" id="navbar__logo">
+        <a href="../index.html" id="navbar__logo__name"
+          >Career & Networking Practice 2024</a
+        >
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="../index.html#map">
+          <a href="../index.html">Map</a>
+        </li>
+        <li class="navbar__menu__item" data-link="#register">
+          <a
+            href="https://e.qube.q-better.com/779:LuP1RZAwTS01F3IrdRZmDVrI3BkGD3GaC79A4PTAaJw"
+            >Register</a
+          >
+        </li>
+        <li class="navbar__menu__item dropdown">
+          Sponsors
+          <ul class="dropdown-content">
+            <li><a href="art-processors.html">Art Processors</a></li>
+            <li><a href="carsales.html">carsales</a></li>
+            <li><a href="centelon-solutions.html">Centelon Solutions </a></li>
+            <li><a href="ifm-investors.html">IFM Investors</a></li>
+            <li><a href="leidos.html">Leidos</a></li>
+            <li><a href="liberty.html">Liberty</a></li>
+            <li><a href="logicalis.html">Logicalis</a></li>
+            <li><a href="motorola-solutions.html">Motorola Solutions</a></li>
+            <li><a href="rea-group.html">REA Group</a></li>
+            <li>
+              <a href="toyota-motor-corp.html"
+                >Toyota Motor Corporation Australia</a
+              >
+            </li>
+            <li><a href="victoria-police.html">Victoria Police</a></li>
+            <li><a href="grad-girls.html">Grad Girls</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Company Section -->
+    <section id="company">
+      <div class="company__content">
+        <h1 class="company__title">Common Interview Questions</h1>
+        <img src="grad-girls.png" alt="Company Logo" class="company__logo" />
+        <div style="line-height: 1.5" class="company__description">
+          <ol>
+            <li>
+              Tell me about a time you had to learn a new technology or system
+              or process.
+            </li>
+            <li>
+              Tell me about a time when you were asked to do something you had
+              never done before.
+            </li>
+            <li>
+              Tell me about a time when you were asked to do something outside
+              your scope of work.
+            </li>
+            <li>
+              Tell me about the biggest change you’ve had to deal with? How did
+              you adapt to that change?
+            </li>
+            <li>
+              Tell me about a time when you had to adjust to a colleague’s
+              working style in order to complete a project or achieve your
+              outcomes.
+            </li>
+            <li>
+              What are the three things that are most important to you in a job?
+            </li>
+            <li>
+              What’s the most interesting thing about you that’s not on your
+              resume?
+            </li>
+            <li>What would make you choose our company over others?</li>
+            <li>
+              What’s the biggest misconception your coworkers have about you,
+              and why do they think that?
+            </li>
+            <li>
+              Give an example of when you had to work with someone who was
+              difficult to get along with. How did you handle interactions with
+              that person?
+            </li>
+            <li>
+              Tell me about one of your favourite experiences working with a
+              team and the contributions you made.
+            </li>
+            <li>
+              Describe the best supervisor or professor you’ve worked with. What
+              part of their management style appealed to you?
+            </li>
+            <li>
+              Tell me about the last time something significant didn’t go
+              according to plan at work. What was your role? What was the
+              outcome?
+            </li>
+            <li>
+              Can you share an experience where a project dramatically shifted
+              direction at the last minute? What did you do?
+            </li>
+            <li>
+              Describe a situation where you needed to persuade someone to see
+              things your way. What steps did you take? What were the results?
+            </li>
+            <li>
+              Tell me about a time when you led by example. What did you do and
+              how did others react?
+            </li>
+            <li>
+              Have you ever had to “sell” an idea to your coworkers or group?
+              How did you do it? What were the results?
+            </li>
+            <li>
+              Recall a time when your manager was unavailable when a problem
+              arose. How did you handle the situation? Who did you consult with?
+            </li>
+            <li>
+              Describe a time when you volunteered to expand your knowledge at
+              work, as opposed to being directed to do so.
+            </li>
+            <li>
+              Tell me about a time when you had to juggle several projects at
+              the same time. How did you organize your time? What was the
+              result?
+            </li>
+            <li>
+              Describe a time when you felt stressed or overwhelmed. How did you
+              handle it?
+            </li>
+            <li>Tell me about a time you failed.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section">
+        <h1 class="contact__title">Contact us</h1>
+        <a href="mailto:students.gradgirls@women4stem.com.au">
+          <h2 class="contact__email">students.gradgirls@women4stem.com.au</h2>
+        </a>
+        <div class="contact__links">
+          <p class="contact__copyrights">
+            Career & Networking Practice 2024 - All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".activity-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          content.style.display =
+            content.style.display === "none" || content.style.display === ""
+              ? "block"
+              : "none";
+          header.querySelector(".icon").textContent =
+            content.style.display === "block" ? "expand_less" : "expand_more";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -499,6 +499,17 @@ footer {
     align-items: center;
     color: white;
   }
+  .lo-3 > div.gradgirls,
+  .lo-3 div.gradgirls a {
+    width: 30%;
+    height: 70px;
+    background-color: #8bc34a;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
   .lo-top > div:hover,
   .lo-top > div:hover a,
   .lo-3 > div:hover,

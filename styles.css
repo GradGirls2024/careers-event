@@ -514,6 +514,7 @@ footer {
   .lo-top > div:hover a,
   .lo-3 > div:hover,
   .lo-3 > div.gradgirls:hover,
+  .lo-3 > div.gradgirls a:hover,
   .lo-2 > div:hover {
     background-color: #db6f65;
   }

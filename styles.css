@@ -489,16 +489,6 @@ footer {
     align-items: center;
     color: white;
   }
-  .lo-2 > div,
-  .lo-2 a {
-    width: 30%;
-    height: 70px;
-    background-color: var(--color-secondary);
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    color: white;
-  }
   .lo-3 > div.gradgirls,
   .lo-3 div.gradgirls a {
     width: 30%;
@@ -509,13 +499,23 @@ footer {
     align-items: center;
     color: white;
   }
+  .lo-2 > div,
+  .lo-2 a {
+    width: 30%;
+    height: 70px;
+    background-color: var(--color-secondary);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
 
   .lo-top > div:hover,
   .lo-top > div:hover a,
   .lo-3 > div:hover,
-  .lo-3 > div.gradgirls:hover,
-  .lo-3 > div.gradgirls a:hover,
-  .lo-2 > div:hover {
+  .lo-3 > div:hover a,
+  .lo-2 > div:hover,
+  .lo-2 > div:hover a {
     background-color: #db6f65;
   }
   .sponsor-list {

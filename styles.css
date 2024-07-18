@@ -237,8 +237,8 @@ button {
 }
 .lo-top > div,
 .lo-top a {
-  width: 25%;
-  height: 60px;
+  width: 30%;
+  height: 70px;
   background-color: var(--color-secondary);
   justify-content: center;
   display: flex;
@@ -248,13 +248,25 @@ button {
 .lo-3 > div,
 .lo-3 a {
   width: 30%;
-  height: 50px;
+  height: 70px;
   background-color: var(--color-secondary);
   justify-content: center;
   display: flex;
   align-items: center;
   color: white;
 }
+
+.lo-3 > div.gradgirls,
+.lo-3 div.gradgirls a {
+  width: 30%;
+  height: 70px;
+  background-color: #8bc34a;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
 .lo-2 > div,
 .lo-2 a {
   width: 22%;

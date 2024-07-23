@@ -372,7 +372,10 @@ footer {
   max-width: 200px;
   margin: 20px 0;
 }
-
+.instruction {
+  padding: 20px;
+  text-align: left;
+}
 .company__description {
   font-size: var(--font-regular);
   color: var(--color-grey);
